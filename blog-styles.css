@@ -1,0 +1,262 @@
+/*stylesheet for blog page*/
+
+body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 26.6% 26.6% 26% 10%;
+    grid-template-areas: "name name name"
+                        ". blogOne ."
+                        ". blogTwo ."
+                        ". blogThree ."
+                        "footer footer footer";
+}
+
+@media only screen and (max-width: 820px){
+    body {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        margin: auto;
+    }
+
+    .footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        grid-template-areas: "copyright icons";
+        background-color: rgb(54, 53, 53);
+        margin-top: 7%;
+        font-size: 0.5em;
+        
+    }
+
+    .icons{
+        padding-bottom: 7%;
+    }
+
+    .blog img{
+        display: none;
+    }
+
+    .blogOne{
+        background-image: url(/Images/himanushu.jpg);
+        background-size: cover;
+        opacity: 0.8;
+        color: white;
+    }
+
+    .blogOne:hover{
+        opacity: 1;
+    }
+
+    .blogTwo{
+        background-image: url(/Images/robert.jpg);
+        background-size: cover;
+        opacity: 0.8;
+        color: white;
+    }
+
+    .blogTwo:hover{
+        opacity: 1;
+    }
+
+    .blogThree{
+        background-image: url(/Images/diego.jpg);
+        background-size: cover;
+        opacity: 0.8;
+        color: white;
+    }
+
+    .blogThree:hover{
+        opacity: 1;
+    }
+
+    button{
+        margin-bottom: 8%;
+    }
+}
+
+.name {
+    grid-area: name;
+    text-align: center;
+}
+
+.name h1 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 3em;
+}
+
+.name a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 3%;
+    font-family: 'Cabin', sans-serif;
+    color: black;
+}
+
+.name a:hover, a.active {
+    color: teal;
+}
+
+.blog h1{
+    background-color: black;
+    color: white;
+    width: 30%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    padding-top: 1.25%;
+    padding-bottom: 1.25%;
+    font-family: 'Raleway', monospace;
+}
+
+.blog{
+    text-align: center;
+    font-family: 'Raleway', monospace;
+}
+
+.blog img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-right: 2px solid black;
+    opacity: 0.8;
+}
+
+.blog img:hover{
+    opacity: 1;
+}
+
+.blogOne{
+    grid-area: blogOne;
+    border: 2px solid black;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    grid-template-areas: "imageOne infoOne";
+}
+
+button{
+    margin-top: 2%;
+    border: none;
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.blog h2{
+    text-transform: uppercase;
+}
+
+.imageOne{
+    grid-area: imageOne;
+}
+
+.infoOne{
+    grid-area: infoOne;
+    margin: auto;
+    margin-left: 25%;
+}
+
+.blogTwo{
+    grid-area: blogTwo;
+    border: 2px solid black;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    grid-template-areas: "imageTwo infoTwo";
+}
+
+.imageTwo{
+    grid-area: imageTwo;
+}
+
+.infoTwo{
+    grid-area: infoTwo;
+    margin: auto;
+    margin-left: 25%;
+}
+
+.blogThree{
+    grid-area: blogThree;
+    border: 2px solid black;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    grid-template-areas: "imageThree infoThree";
+}
+
+.imageThree{
+    grid-area: imageThree;
+}
+
+.infoThree{
+    grid-area: infoThree;
+    margin: auto;
+    margin-left: 25%;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "copyright icons";
+    background-color: rgb(54, 53, 53);
+    margin-bottom: 3%;
+}
+
+.copyright {
+    grid-area: copyright;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+.icons {
+    grid-area: icons;
+    cursor: pointer;
+    text-align: left;
+    width: 15%;
+    font-size: 3em;
+    color: rgb(22, 20, 20);
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+span{
+    margin-left: 35%;
+}
+
+.icons:hover{
+    color: white;
+}
