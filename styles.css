@@ -1,0 +1,234 @@
+/*stylesheet for landing page: index.html*/
+
+body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+@media only screen and (min-width: 400px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10% 40% 13.3% 13.3% 13.3% 10%;
+        grid-template-areas: "name name name"
+        "main main main"
+        "imageOne imageOne imageOne"
+        "imageTwo imageTwo imageTwo"
+        "imageThree imageThree imageThree"
+        "footer footer footer";
+    }
+    
+    .main h2{
+        font-size: 1em;
+    }
+
+    .main p{
+        font-size: 0.5em;
+        font-family: 'Cabin', sans-serif;
+    }
+
+    button{
+        height: 0.5em;
+        font-size: 0.15em;
+    }
+
+    img{
+        height: 100%;
+    }
+
+    .imageOne h2{
+        font-size: 1em;
+    }
+
+    .imageTwo h2{
+        font-size: 1em;
+    }
+
+    .imageThree h2{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15% 40% 40% 10%;
+        grid-template-areas: "name name name" "main main main" "imageOne imageTwo imageThree" "footer footer footer";
+    }
+}
+
+.name {
+    grid-area: name;
+    text-align: center;
+}
+
+.name h1 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 3em;
+}
+
+.name a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 3%;
+    font-family: 'Cabin', sans-serif;
+    color: black;
+}
+
+.name a:hover, a.active {
+    color: teal;
+}
+
+.main {
+    grid-area: main;
+    background-image: url(/Images/elijah.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position-x: center;
+    background-position-y: 25%;
+    margin-top: 1.5%;
+}
+
+.main h2 {
+    text-align: center;
+    text-transform: uppercase;
+    width: 35%;
+    background-color: white;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 12%;
+    margin-top: 7%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.main p {
+    text-align: center;
+    width: 35%;
+    background-color: rgb(48, 46, 46);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 12%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size: 1.2em;
+}
+
+button {
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    height: 3.5em;
+    width: 8em;
+    margin-left: 12%;
+}
+
+button:hover {
+    background-color: rgb(8, 199, 199);
+}
+
+.imageOne {
+    grid-area: imageOne;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.imageOne img {
+    width: 75%;
+    height: 65%;
+    margin-top: 20%;
+    border: 2px solid rgb(43, 42, 42);
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+
+.imageTwo {
+    grid-area: imageTwo;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.imageTwo img {
+    width: 75%;
+    height: 65%;
+    margin-top: 20%;
+    border: 2px solid rgb(43, 42, 42);
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+
+.imageThree {
+    grid-area: imageThree;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.imageThree img {
+    width: 75%;
+    height: 65%;
+    margin-top: 20%;
+    border: 2px solid rgb(43, 42, 42);
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+
+.imageOne h2 {
+    margin-top: 1%;
+}
+
+.imageTwo h2 {
+    margin-top: 1%;
+}
+
+.imageThree h2 {
+    margin-top: 1%;
+}
+
+img:hover {
+    opacity: 1;
+    border: 2px solid black;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "copyright icons";
+    background-color: rgb(54, 53, 53);
+    margin-top: 3.5%;
+}
+
+.copyright {
+    grid-area: copyright;
+    text-align: center;
+    padding-top: 2.5%;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+.icons {
+    grid-area: icons;
+    cursor: pointer;
+    text-align: left;
+    width: 15%;
+    font-size: 3em;
+    color: rgb(22, 20, 20);
+    margin-top: 5%;
+}
+
+span{
+    margin-left: 35%;
+}
+
+.icons:hover{
+    color: white;
+}
