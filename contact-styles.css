@@ -1,0 +1,59 @@
+/*stylesheet for contact page*/
+
+.name {
+    grid-area: name;
+    text-align: center;
+}
+
+.name h1 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 3em;
+}
+
+.name a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 3%;
+    font-family: 'Cabin', sans-serif;
+    color: black;
+}
+
+.name a:hover, a.active {
+    color: teal;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "copyright icons";
+    background-color: rgb(54, 53, 53);
+    margin-bottom: 3%;
+}
+
+.copyright {
+    grid-area: copyright;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+.icons {
+    grid-area: icons;
+    cursor: pointer;
+    text-align: left;
+    width: 15%;
+    font-size: 3em;
+    color: rgb(22, 20, 20);
+    padding-top: 7.5%;
+}
+
+span{
+    margin-left: 35%;
+}
+
+.icons:hover{
+    color: white;
+}
