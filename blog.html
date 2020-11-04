@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="blog-styles.css">
     <title>Blog</title>
 </head>
+
 <body>
     <header class="name">
         <h1>MAGNIFIQUE</h1>
@@ -25,28 +27,28 @@
     <main class="blog">
         <h1>BLOG</h1>
         <section class="blogOne">
-            <img class="imageOne" src="/Images/himanushu.jpg" alt="">
+            <img class="imageOne" src="/images/himanushu.jpg" alt="">
             <div class="infoOne">
-            <h2>Blog One</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing dolor sit amet.</p>
-            <button>Read More</button>
-        </div>
+                <h2>Blog One</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing dolor sit amet.</p>
+                <button onclick="getInfo()">Read More</button>
+            </div>
         </section>
         <section class="blogTwo">
-            <img class="imageTwo" src="/Images/robert.jpg" alt="">
+            <img class="imageTwo" src="/images/robert.jpg" alt="">
             <div class="infoTwo">
-            <h2>Blog Two</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing dolor sit amet.</p>
-            <button>Read More</button>
-        </div>
+                <h2>Blog Two</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing dolor sit amet.</p>
+                <button>Read More</button>
+            </div>
         </section>
         <section class="blogThree">
-            <img class="imageThree" src="/Images/ryan.jpg" alt="">
+            <img class="imageThree" src="/images/ryan.jpg" alt="">
             <div class="infoThree">
-            <h2>Blog Three</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit dolor sit amet.</p>
-            <button>Read More</button>
-        </div>
+                <h2>Blog Three</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit dolor sit amet.</p>
+                <button>Read More</button>
+            </div>
         </section>
     </main>
 
@@ -57,5 +59,14 @@
             <a href="#"><i class="fab fa-google-plus-square icons"></i></a>
             <a href="#"><i class="fab fa-pinterest-square icons"></i></a></span>
     </footer>
+
+    <script>
+        function getInfo() {
+            fetch('https://jsonplaceholder.typicode.com/todos/1')
+                .then(response => response.json())
+                .then(myJson => console.log(myJson))
+        }
+    </script>
 </body>
+
 </html>
