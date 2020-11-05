@@ -1,4 +1,22 @@
 /*stylesheet for contact page*/
+@media only screen and (max-width: 820px){
+    .footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        grid-template-areas: "copyright icons";
+        background-color: rgb(54, 53, 53);
+        margin-top: 10%;
+        font-size: 0.5em;
+        
+    }
+
+    .icons{
+        margin: 2%;
+    }
+}
+
 body {
     background-color: white;
     width: 100%;
