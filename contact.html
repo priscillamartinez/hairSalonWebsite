@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="contact-styles.css">
     <title>Contact Us</title>
 </head>
-<body>
+<body class="container">
     <header class="name">
         <h1>MAGNIFIQUE</h1>
         <nav>
@@ -22,8 +22,16 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <h1>LET'S KEEP IN TOUCH</h1>
+        <form action="contact.html">
+            <input type="text" name="fname" id="fname" value="name"><br>
+			<input type="text" name="address" id="address" value="address"><br>
+			<input type="text" name="email" id="email" value="email"><br>
+			<input type="text" name="phone" id="phone" value="phone number"><br>
+			<textarea name="message" id="message">message</textarea><br>
+			<input type="submit" name="send" id="send" value="send">
+        </form>
     </main>
 
     <footer class="footer">
