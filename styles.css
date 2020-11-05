@@ -85,7 +85,7 @@ body {
 
 .main {
     grid-area: main;
-    background-image: url(/img/elijah.jpg);
+    background-image: url(https://raw.githubusercontent.com/priscillamartinez/hairSalonWebsite/main/img/elijah.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
