@@ -85,7 +85,7 @@ body {
 
 .main {
     grid-area: main;
-    background-image: url(/Images/elijah.jpg);
+    background-image: url(/img/elijah.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
