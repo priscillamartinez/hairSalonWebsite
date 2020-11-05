@@ -49,7 +49,7 @@ body {
     }
 
     .blogOne{
-        background-image: url(/Images/himanushu.jpg);
+        background-image: url(https://raw.githubusercontent.com/priscillamartinez/hairSalonWebsite/main/img/himanushu.jpg);
         background-size: cover;
         opacity: 0.8;
         color: white;
@@ -60,7 +60,7 @@ body {
     }
 
     .blogTwo{
-        background-image: url(/Images/robert.jpg);
+        background-image: url(https://raw.githubusercontent.com/priscillamartinez/hairSalonWebsite/main/img/robert.jpg);
         background-size: cover;
         opacity: 0.8;
         color: white;
@@ -71,7 +71,7 @@ body {
     }
 
     .blogThree{
-        background-image: url(/Images/diego.jpg);
+        background-image: url(https://raw.githubusercontent.com/priscillamartinez/hairSalonWebsite/main/img/ryan.jpg);
         background-size: cover;
         opacity: 0.8;
         color: white;
