@@ -65,6 +65,10 @@ body {
     width: 100%;
 }
 
+.main button{
+    margin-bottom: 2%;
+}
+
 .footer {
     grid-area: footer;
     display: grid;
